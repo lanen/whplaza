@@ -1,0 +1,777 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug_Unicode|Win32">
+      <Configuration>Debug_Unicode</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_Manager|Win32">
+      <Configuration>Release_Manager</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_Unicode|Win32">
+      <Configuration>Release_Unicode</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>游戏广场</ProjectName>
+    <ProjectGuid>{3E5290EE-EC1B-4591-BB6F-B453BB65F471}</ProjectGuid>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Manager|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Unicode|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Unicode|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_Manager|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_Unicode|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Unicode|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../../运行/Debug/Ansi/</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Debug\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Release\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug_Unicode|Win32'">$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug_Unicode|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug_Unicode|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release_Unicode|Win32'">$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release_Unicode|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release_Unicode|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release_Manager|Win32'">$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release_Manager|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release_Manager|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug_Unicode|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug_Unicode|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug_Unicode|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release_Manager|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release_Manager|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release_Manager|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release_Unicode|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release_Unicode|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release_Unicode|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" />
+    <PostBuildEventUseInBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</PostBuildEventUseInBuild>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">GamePlaza</TargetName>
+    <PostBuildEventUseInBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;PLAYCHATSHORTSOUND;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>..\..\Directx SDK 9.0c\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <OutputFile>../../../运行/Debug/Ansi/GamePlaza.exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalLibraryDirectories>..\..\Directx SDK 9.0c\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <PostBuildEvent>
+      <Command>mkdir ..\..\..\发布组件\客户端组件\Debug\Ansi
+copy /y ..\..\..\运行\Debug\Ansi\$(TargetFileName) ..\..\..\发布组件\客户端组件\Debug\Ansi\$(TargetFileName)
+</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;PLAYCHATSHORTSOUND;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>..\..\Directx SDK 9.0c\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <OutputFile>../../../运行/Release/Ansi/GamePlaza.exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalLibraryDirectories>..\..\Directx SDK 9.0c\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <PostBuildEvent>
+      <Command>mkdir ..\..\..\发布组件\客户端组件\Release\Ansi
+copy /y ..\..\..\运行\Release\Ansi\$(TargetFileName) ..\..\..\发布组件\客户端组件\Release\Ansi\$(TargetFileName)
+</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Unicode|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_UNICODE;PLAYCHATSHORTSOUND;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>../../../运行/Debug/Unicode/GamePlaza.exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <PostBuildEvent>
+      <Command>mkdir ..\..\..\发布组件\客户端组件\Debug\Unicode
+copy /y ..\..\..\运行\Debug\Unicode\$(TargetFileName) ..\..\..\发布组件\客户端组件\Debug\Unicode\$(TargetFileName)
+</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_Unicode|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_UNICODE;PLAYCHATSHORTSOUND;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>../../../运行/Release/Unicode/GamePlaza.exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <PostBuildEvent>
+      <Command>mkdir ..\..\..\发布组件\客户端组件\Release\Unicode
+copy /y ..\..\..\运行\Release\Unicode\$(TargetFileName) ..\..\..\发布组件\客户端组件\Release\Unicode\$(TargetFileName)
+</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_Manager|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_UNICODE;RELEASE_MANAGER;PLAYCHATSHORTSOUND;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>../../../运行/Release/Unicode/GameManager.exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <PostBuildEvent>
+      <Command>mkdir ..\..\..\发布组件\客户端组件\Release\Unicode
+copy /y ..\..\..\运行\Release\Unicode\$(TargetFileName) ..\..\..\发布组件\客户端组件\Release\Unicode\$(TargetFileName)
+</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AccountsControl.cpp" />
+    <ClCompile Include="ChatHistory.cpp" />
+    <ClCompile Include="CollocateRoom.cpp" />
+    <ClCompile Include="KindViewItem.cpp" />
+    <ClCompile Include="Other\Custsite.cpp" />
+    <ClCompile Include="DlgCollocate.cpp" />
+    <ClCompile Include="DlgCustomFace.cpp" />
+    <ClCompile Include="DlgDismissGame.cpp" />
+    <ClCompile Include="DlgDownLoad.cpp" />
+    <ClCompile Include="DlgEnquire.cpp" />
+    <ClCompile Include="DlgIssueMessage.cpp" />
+    <ClCompile Include="DlgKickUser.cpp" />
+    <ClCompile Include="DlgLockMachine.cpp" />
+    <ClCompile Include="DlgLogon.cpp" />
+    <ClCompile Include="DlgManageUser.cpp" />
+    <ClCompile Include="DLGMBCard.cpp" />
+    <ClCompile Include="DlgProxyConfig.cpp" />
+    <ClCompile Include="DlgRegister.cpp" />
+    <ClCompile Include="DlgSearchTable.cpp" />
+    <ClCompile Include="DlgSearchUser.cpp" />
+    <ClCompile Include="DlgServerManager.cpp" />
+    <ClCompile Include="DlgService.cpp" />
+    <ClCompile Include="DlgServiceIndividual.cpp" />
+    <ClCompile Include="DlgServiceItem.cpp" />
+    <ClCompile Include="DlgServicePassword.cpp" />
+    <ClCompile Include="DlgSkinControl.cpp" />
+    <ClCompile Include="DlgStatus.cpp" />
+    <ClCompile Include="DlgTablePassword.cpp" />
+    <ClCompile Include="DlgWhisper.cpp" />
+    <ClCompile Include="GamePlaza.cpp" />
+    <ClCompile Include="GlobalUnits.cpp" />
+    <ClCompile Include="Other\IDispimp.cpp" />
+    <ClCompile Include="MissionList.cpp" />
+    <ClCompile Include="MissionLogon.cpp" />
+    <ClCompile Include="PlatformEvent.cpp" />
+    <ClCompile Include="PlatformFrame.cpp" />
+    <ClCompile Include="PlatformPublicize.cpp" />
+    <ClCompile Include="PlazaViewItem.cpp" />
+    <ClCompile Include="ProcessManager.cpp" />
+    <ClCompile Include="ServerControl.cpp" />
+    <ClCompile Include="ServerListData.cpp" />
+    <ClCompile Include="ServerListView.cpp" />
+    <ClCompile Include="ServerViewItem.cpp" />
+    <ClCompile Include="Stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug_Unicode|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release_Manager|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release_Unicode|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="TableViewFrame.cpp" />
+    <ClCompile Include="WndGridCtrl.cpp" />
+    <ClCompile Include="WndUserInfoCtrl.cpp" />
+    <ClCompile Include="WndValidateCode.cpp" />
+    <ClCompile Include="WndViewItemCtrl.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AccountsControl.h" />
+    <ClInclude Include="ChatHistory.h" />
+    <ClInclude Include="CollocateRoom.h" />
+    <ClInclude Include="KindViewItem.h" />
+    <ClInclude Include="WndGridCtrl.h" />
+    <ClInclude Include="Other\Custsite.h" />
+    <ClInclude Include="DlgCollocate.h" />
+    <ClInclude Include="DlgCustomFace.h" />
+    <ClInclude Include="DlgDismissGame.h" />
+    <ClInclude Include="DlgDownLoad.h" />
+    <ClInclude Include="DlgEnquire.h" />
+    <ClInclude Include="DlgIssueMessage.h" />
+    <ClInclude Include="DlgKickUser.h" />
+    <ClInclude Include="DlgLockMachine.h" />
+    <ClInclude Include="DlgLogon.h" />
+    <ClInclude Include="DlgManageUser.h" />
+    <ClInclude Include="DLGMBCard.h" />
+    <ClInclude Include="DlgProxyConfig.h" />
+    <ClInclude Include="DlgRegister.h" />
+    <ClInclude Include="DlgSearchTable.h" />
+    <ClInclude Include="DlgSearchUser.h" />
+    <ClInclude Include="DlgServerManager.h" />
+    <ClInclude Include="DlgService.h" />
+    <ClInclude Include="DlgServiceIndividual.h" />
+    <ClInclude Include="DlgServiceItem.h" />
+    <ClInclude Include="DlgServicePassword.h" />
+    <ClInclude Include="DlgSkinControl.h" />
+    <ClInclude Include="DlgStatus.h" />
+    <ClInclude Include="DlgTablePassword.h" />
+    <ClInclude Include="DlgWhisper.h" />
+    <ClInclude Include="GamePlaza.h" />
+    <ClInclude Include="GamePlazaHead.h" />
+    <ClInclude Include="GlobalUnits.h" />
+    <ClInclude Include="Other\IDispimp.h" />
+    <ClInclude Include="MissionList.h" />
+    <ClInclude Include="MissionLogon.h" />
+    <ClInclude Include="PlatformEvent.h" />
+    <ClInclude Include="PlatformFrame.h" />
+    <ClInclude Include="PlatformPublicize.h" />
+    <ClInclude Include="PlazaViewItem.h" />
+    <ClInclude Include="ProcessManager.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="ServerControl.h" />
+    <ClInclude Include="ServerListData.h" />
+    <ClInclude Include="ServerListView.h" />
+    <ClInclude Include="ServerViewItem.h" />
+    <ClInclude Include="Stdafx.h" />
+    <ClInclude Include="TableViewFrame.h" />
+    <ClInclude Include="WndUserInfoCtrl.h" />
+    <ClInclude Include="WndValidateCode.h" />
+    <ClInclude Include="WndViewItemCtrl.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Res\GameKind\ChinaChess.bmp" />
+    <None Include="Res\GameKind\DZShowHand.bmp" />
+    <None Include="Res\GameKind\FourEnsign.bmp" />
+    <None Include="Res\GameKind\HorseBattle..bmp" />
+    <None Include="Res\GameKind\HorseBattle.bmp" />
+    <None Include="Res\GameKind\Land2.bmp" />
+    <None Include="Res\GameKind\LandCrazyEx.bmp" />
+    <None Include="Res\GameKind\LandHappy.bmp" />
+    <None Include="Res\GameKind\SparrowER.bmp" />
+    <None Include="Res\PLATFORM_FRAME\BT_BACK_PLAZA.bmp" />
+    <None Include="Res\PLATFORM_FRAME\BT_ENTER_ROOM.bmp" />
+    <None Include="res\PLATFORM_FRAME\BT_FRAME_GAME_LIST.bmp" />
+    <None Include="Res\PLATFORM_FRAME\BT_NEXT.bmp" />
+    <None Include="Res\PLATFORM_FRAME\BT_PREVIOUS.bmp" />
+    <None Include="Res\PLATFORM_FRAME\BT_PREVIOUS.png" />
+    <None Include="Res\PLATFORM_FRAME\GRID_HEIGHT.png" />
+    <None Include="Res\PLATFORM_FRAME\GRID_MIDDER.png" />
+    <None Include="Res\PLATFORM_FRAME\GRID_PRIMARY.png" />
+    <None Include="Res\PLATFORM_FRAME\GRID_TEST.png" />
+    <None Include="Res\PLATFORM_FRAME\IDB_FRAME_BACK.bmp" />
+    <None Include="Res\Server_ad\AD_BL.bmp" />
+    <None Include="Res\Server_ad\AD_BM.bmp" />
+    <None Include="Res\Server_ad\AD_BR.bmp" />
+    <None Include="Res\Server_ad\AD_ML.bmp" />
+    <None Include="Res\Server_ad\AD_MR.bmp" />
+    <None Include="Res\Server_ad\AD_TL.bmp" />
+    <None Include="Res\Server_ad\AD_TM.bmp" />
+    <None Include="Res\Server_ad\AD_TR.bmp" />
+    <None Include="Res\Plaza_enquire\BK_ENQUIRE_BUTTON.bmp" />
+    <None Include="Res\Platform_frame\BK_GAME_LIST.bmp" />
+    <None Include="Res\Server_list\BK_LIST.bmp" />
+    <None Include="Res\Platform_frame\BK_NAVIGATION.bmp" />
+    <None Include="Res\Item_frame\BK_PLATFORM_1.bmp" />
+    <None Include="Res\Item_frame\BK_PLATFORM_2.bmp" />
+    <None Include="Res\Item_frame\BK_PLATFORM_3.bmp" />
+    <None Include="Res\SERVER_LIST\BT_GAME_TYPE.png" />
+    <None Include="Res\SERVER_LIST\GAME_LIST_BK.png" />
+    <None Include="Res\SERVER_LIST\IDB_INPUT_ACCOUNT.bmp" />
+    <None Include="Res\SERVER_LIST\IDB_LIST_BACK.bmp" />
+    <None Include="Res\SERVER_LIST\IDB_WEALTHINFO.bmp" />
+    <None Include="Res\SERVER_LIST\MATCH_LIST_BK.png" />
+    <None Include="Res\SERVER_LIST\USER_INFO_BK.png" />
+    <None Include="Res\User_info\BK_USER_INFO.bmp" />
+    <None Include="Res\User_info\BK_USER_INFO_SET.bmp" />
+    <None Include="Res\Server_frame\BK_USER_LIST.bmp" />
+    <None Include="Res\Web_browser\BROWSER_BL.bmp" />
+    <None Include="Res\Web_browser\BROWSER_BM.bmp" />
+    <None Include="Res\Web_browser\BROWSER_BR.bmp" />
+    <None Include="Res\Web_browser\BROWSER_ML.bmp" />
+    <None Include="Res\Web_browser\BROWSER_MR.bmp" />
+    <None Include="Res\Web_browser\BROWSER_TL.bmp" />
+    <None Include="Res\Web_browser\BROWSER_TM.bmp" />
+    <None Include="Res\Web_browser\BROWSER_TR.bmp" />
+    <None Include="Res\Web_browser\BT_BROWSER.bmp" />
+    <None Include="Res\Server_chat\BT_CHAT_BUTTON_1.bmp" />
+    <None Include="Res\Server_chat\BT_CHAT_BUTTON_1.png" />
+    <None Include="Res\Server_chat\BT_CHAT_BUTTON_2.bmp" />
+    <None Include="Res\Server_chat\BT_CHAT_BUTTON_2.png" />
+    <None Include="Res\Server_chat\BT_CHAT_BUTTON_3.bmp" />
+    <None Include="Res\Server_chat\BT_CHAT_BUTTON_3.png" />
+    <None Include="Res\Server_chat\BT_CHAT_BUTTON_4.bmp" />
+    <None Include="Res\Server_chat\BT_CHAT_BUTTON_4.png" />
+    <None Include="Res\Server_chat\BT_CHAT_SHORT.bmp" />
+    <None Include="Res\Platform_frame\BT_CLOSE.bmp" />
+    <None Include="Res\Platform_frame\Bt_close.png" />
+    <None Include="Res\Plaza_logon\BT_COMBOBOX.bmp" />
+    <None Include="Res\Down_load\BT_DOWN_LOAD_LAST.bmp" />
+    <None Include="Res\Down_load\BT_DOWN_LOAD_NEXT.bmp" />
+    <None Include="Res\Plaza_enquire\BT_ENQUIRE_CANCEL.bmp" />
+    <None Include="Res\Plaza_enquire\BT_ENQUIRE_CANCEL.png" />
+    <None Include="Res\Plaza_enquire\BT_ENQUIRE_PLAZA.png" />
+    <None Include="Res\Plaza_enquire\BT_ENQUIRE_SERVER.png" />
+    <None Include="Res\Plaza_enquire\BT_ENQUIRE_SWITCH.png" />
+    <None Include="Res\User_info\BT_EXCHANGE.bmp" />
+    <None Include="Res\Platform_frame\BT_GAME_LIST_HIDE.png" />
+    <None Include="Res\Platform_frame\BT_GAME_LIST_SHOW.png" />
+    <None Include="Res\Web_browser\BT_HOME.png" />
+    <None Include="Res\Plaza_match\BT_JOIN.bmp" />
+    <None Include="Res\Web_browser\Bt_last.png" />
+    <None Include="Res\Plaza_match\BT_LEAVE.bmp" />
+    <None Include="Res\Server_list\BT_LOCK_LIST.png" />
+    <None Include="Res\Plaza_logon\BT_LOGON.bmp" />
+    <None Include="Res\Plaza_logon\BT_LOGON_ENTER.bmp" />
+    <None Include="Res\Plaza_logon\BT_LOGON_ENTER.png" />
+    <None Include="Res\Plaza_logon\BT_LOGON_ITEM.bmp" />
+    <None Include="Res\Plaza_logon\BT_LOGON_ITEM.png" />
+    <None Include="Res\Plaza_logon\BT_LOGON_LINK.bmp" />
+    <None Include="Res\Plaza_logon\BT_LOGON_LINK_1.png" />
+    <None Include="Res\Plaza_logon\BT_LOGON_LINK_2.png" />
+    <None Include="Res\Plaza_logon\BT_LOGON_LINK_3.png" />
+    <None Include="Res\Plaza_logon\BT_LOGON_LINK_4.png" />
+    <None Include="Res\Plaza_logon\BT_LOGON_QUIT.bmp" />
+    <None Include="Res\Plaza_logon\BT_LOGON_REGISTER.png" />
+    <None Include="Res\Platform_frame\BT_MAX.bmp" />
+    <None Include="Res\Platform_frame\BT_MIN.bmp" />
+    <None Include="Res\Platform_frame\BT_NAVIGATION_1.bmp" />
+    <None Include="Res\Platform_frame\Bt_navigation_1.png" />
+    <None Include="Res\Platform_frame\BT_NAVIGATION_2.bmp" />
+    <None Include="Res\Platform_frame\BT_NAVIGATION_2.png" />
+    <None Include="Res\Platform_frame\BT_NAVIGATION_3.bmp" />
+    <None Include="Res\Platform_frame\BT_NAVIGATION_3.png" />
+    <None Include="Res\Platform_frame\BT_NAVIGATION_4.bmp" />
+    <None Include="Res\Platform_frame\BT_NAVIGATION_4.png" />
+    <None Include="Res\Platform_frame\BT_NAVIGATION_5.bmp" />
+    <None Include="Res\Platform_frame\BT_NAVIGATION_5.png" />
+    <None Include="Res\Web_browser\BT_NEXT.png" />
+    <None Include="Res\Item_frame\BT_OTHER_SERVER.bmp" />
+    <None Include="Res\Item_frame\BT_PLATFORM_1.bmp" />
+    <None Include="Res\Item_frame\BT_PLATFORM_1.png" />
+    <None Include="Res\Item_frame\BT_PLATFORM_2.bmp" />
+    <None Include="Res\Item_frame\BT_PLATFORM_2.png" />
+    <None Include="Res\Item_frame\BT_PLATFORM_3.bmp" />
+    <None Include="Res\Item_frame\BT_PLATFORM_3.png" />
+    <None Include="Res\Server_table\BT_QUIT_SERVER.bmp" />
+    <None Include="Res\Server_table\BT_QUIT_SERVER.png" />
+    <None Include="Res\Plaza_logon\BT_REGISTER.bmp" />
+    <None Include="Res\Plaza_logon\BT_REGISTER_CLOSE.bmp" />
+    <None Include="Res\Plaza_logon\BT_REGISTER_ENTER.png" />
+    <None Include="Res\Plaza_logon\BT_REGISTER_QUIT.png" />
+    <None Include="Res\Web_browser\BT_RELOAD.png" />
+    <None Include="Res\Platform_frame\BT_RESORE.bmp" />
+    <None Include="Res\User_info\BT_SAFE.bmp" />
+    <None Include="Res\Plaza_logon\BT_SELECT_FACE.bmp" />
+    <None Include="Res\Server_chat\BT_SEND_CHAT.bmp" />
+    <None Include="Res\Web_browser\BT_SERVER_ITEM.bmp" />
+    <None Include="Res\Server_table\BT_SERVER_MANAGE.bmp" />
+    <None Include="Res\Platform_frame\BT_SET.bmp" />
+    <None Include="Res\Platform_frame\BT_SKIN.bmp" />
+    <None Include="Res\Dlg_status\BT_STATUS_CANCEL.bmp" />
+    <None Include="Res\Web_browser\BT_STOP.png" />
+    <None Include="Res\Server_table\BT_TABLE_BUTTON_1.bmp" />
+    <None Include="Res\Server_table\BT_TABLE_BUTTON_1.png" />
+    <None Include="Res\Server_table\BT_TABLE_BUTTON_2.bmp" />
+    <None Include="Res\Server_table\BT_TABLE_BUTTON_2.png" />
+    <None Include="Res\Server_table\BT_TABLE_BUTTON_3.bmp" />
+    <None Include="Res\Server_table\BT_TABLE_BUTTON_3.png" />
+    <None Include="Res\Server_table\BT_TABLE_BUTTON_4.bmp" />
+    <None Include="Res\Server_table\BT_TABLE_BUTTON_4.png" />
+    <None Include="Res\Server_table\BT_TABLE_BUTTON_5.bmp" />
+    <None Include="Res\Server_table\BT_TABLE_BUTTON_5.png" />
+    <None Include="Res\Server_table\BT_TABLE_BUTTON_6.bmp" />
+    <None Include="Res\Server_table\BT_TABLE_BUTTON_6.png" />
+    <None Include="Res\Server_table\BT_TABLE_BUTTON_7.bmp" />
+    <None Include="Res\Server_table\BT_TABLE_BUTTON_7.png" />
+    <None Include="Res\Server_list\BT_UNLOCK_LIST.png" />
+    <None Include="Res\User_info\BT_USER_INFO_1.png" />
+    <None Include="Res\User_info\BT_USER_INFO_2.png" />
+    <None Include="Res\User_info\BT_USER_INFO_3.png" />
+    <None Include="Res\User_info\BT_USER_INFO_4.png" />
+    <None Include="Res\User_info\BT_USER_INFO_SET.png" />
+    <None Include="Res\Server_frame\BT_USER_LIST_HIDE.png" />
+    <None Include="Res\Server_frame\BT_USER_LIST_SHOW.png" />
+    <None Include="Res\Plaza_whisper\BT_WHISPER_BUTTON_1.bmp" />
+    <None Include="Res\Plaza_whisper\BT_WHISPER_BUTTON_1.png" />
+    <None Include="Res\Plaza_whisper\BT_WHISPER_BUTTON_2.bmp" />
+    <None Include="Res\Plaza_whisper\BT_WHISPER_BUTTON_2.png" />
+    <None Include="Res\Plaza_whisper\BT_WHISPER_BUTTON_3.bmp" />
+    <None Include="Res\Plaza_whisper\BT_WHISPER_BUTTON_3.png" />
+    <None Include="Res\Plaza_whisper\BT_WHISPER_HISTORY.bmp" />
+    <None Include="Res\Plaza_whisper\BT_WHISPER_HISTORY.png" />
+    <None Include="Res\Plaza_whisper\BT_WHISPER_SEND_CONTROL.bmp" />
+    <None Include="Res\Plaza_whisper\BT_WHISPER_USER_MENU.bmp" />
+    <None Include="Res\Plaza_whisper\CANCEL_DETEST.bmp" />
+    <None Include="Res\Plaza_whisper\CANCEL_FRIEND.bmp" />
+    <None Include="Res\Server_chat\CHAT_BL.bmp" />
+    <None Include="Res\Server_chat\CHAT_BM.bmp" />
+    <None Include="Res\Server_chat\CHAT_BR.bmp" />
+    <None Include="Res\Server_chat\CHAT_ML.bmp" />
+    <None Include="Res\Server_chat\CHAT_MR.bmp" />
+    <None Include="Res\Server_chat\CHAT_TL.bmp" />
+    <None Include="Res\Server_chat\CHAT_TM.bmp" />
+    <None Include="Res\Server_chat\CHAT_TR.bmp" />
+    <None Include="Res\Plaza_whisper\CHAT_WHISPER_BL.bmp" />
+    <None Include="Res\Plaza_whisper\CHAT_WHISPER_BM.bmp" />
+    <None Include="Res\Plaza_whisper\CHAT_WHISPER_BR.bmp" />
+    <None Include="Res\Plaza_whisper\CHAT_WHISPER_ML.bmp" />
+    <None Include="Res\Plaza_whisper\CHAT_WHISPER_MR.bmp" />
+    <None Include="Res\Plaza_whisper\CHAT_WHISPER_TL.bmp" />
+    <None Include="Res\Plaza_whisper\CHAT_WHISPER_TM.bmp" />
+    <None Include="Res\Plaza_whisper\CHAT_WHISPER_TR.bmp" />
+    <None Include="Res\Plaza_collocate\Collocate_bar_bt.png" />
+    <None Include="Res\Plaza_collocate\COLLOCATE_BAR_LOGO.png" />
+    <None Include="Res\CONNECT_STATUS.bmp" />
+    <None Include="Res\Plaza_enquire\DLG_ENQUIRE_BACK.png" />
+    <None Include="Res\Plaza_logon\Dlg_logon_back.png" />
+    <None Include="Res\Plaza_logon\DLG_REGISTER_BACK.png" />
+    <None Include="Res\Down_load\DOWN_LOAD_ITEM.bmp" />
+    <None Include="Res\Down_load\DOWN_LOAD_SCALE.png" />
+    <None Include="Res\DownLoad.ico" />
+    <None Include="Res\Platform_frame\FRAME_BL.bmp" />
+    <None Include="Res\Platform_frame\FRAME_BM.bmp" />
+    <None Include="Res\Platform_frame\FRAME_BR.bmp" />
+    <None Include="Res\Platform_frame\FRAME_ML.bmp" />
+    <None Include="Res\Platform_frame\FRAME_MR.bmp" />
+    <None Include="Res\Platform_frame\FRAME_TL.bmp" />
+    <None Include="Res\Platform_frame\FRAME_TM.bmp" />
+    <None Include="Res\Platform_frame\FRAME_TR.bmp" />
+    <None Include="Res\Server_property\GAME_PROPERTY_ITEM.bmp" />
+    <None Include="Res\Server_property\GAME_PROPERTY_L.bmp" />
+    <None Include="Res\Server_property\GAME_PROPERTY_M.bmp" />
+    <None Include="Res\Server_property\GAME_PROPERTY_R.bmp" />
+    <None Include="Res\Server_list\GAMEKIND_NORMAL.bmp" />
+    <None Include="Res\GamePlaza.ico" />
+    <None Include="res\GamePlaza.rc2" />
+    <None Include="Res\HAND_CUR.cur" />
+    <None Include="Res\Plaza_whisper\HISTORY_WHISPER_BL.bmp" />
+    <None Include="Res\Plaza_whisper\HISTORY_WHISPER_BM.bmp" />
+    <None Include="Res\Plaza_whisper\HISTORY_WHISPER_BR.bmp" />
+    <None Include="Res\Plaza_whisper\HISTORY_WHISPER_ML.bmp" />
+    <None Include="Res\Plaza_whisper\HISTORY_WHISPER_MR.bmp" />
+    <None Include="Res\Plaza_whisper\HISTORY_WHISPER_TL.bmp" />
+    <None Include="Res\Plaza_whisper\HISTORY_WHISPER_TM.bmp" />
+    <None Include="Res\Plaza_whisper\HISTORY_WHISPER_TR.bmp" />
+    <None Include="Res\Plaza_logon\IMAGE_REGISTER.bmp" />
+    <None Include="Res\IMAGE_SEARCH.bmp" />
+    <None Include="Res\Plaza_whisper\INPUT_WHISPER_BL.bmp" />
+    <None Include="Res\Plaza_whisper\INPUT_WHISPER_BM.bmp" />
+    <None Include="Res\Plaza_whisper\INPUT_WHISPER_BR.bmp" />
+    <None Include="Res\Plaza_whisper\INPUT_WHISPER_ML.bmp" />
+    <None Include="Res\Plaza_whisper\INPUT_WHISPER_MR.bmp" />
+    <None Include="Res\Plaza_whisper\INPUT_WHISPER_TL.bmp" />
+    <None Include="Res\Plaza_whisper\INPUT_WHISPER_TM.bmp" />
+    <None Include="Res\Plaza_whisper\INPUT_WHISPER_TR.bmp" />
+    <None Include="Res\Item_frame\ITEM_BUTTON.bmp" />
+    <None Include="Res\Item_frame\ITEM_FRAME_BL.bmp" />
+    <None Include="Res\Item_frame\ITEM_FRAME_BM.bmp" />
+    <None Include="Res\Item_frame\ITEM_FRAME_BR.bmp" />
+    <None Include="Res\Item_frame\ITEM_FRAME_ML.bmp" />
+    <None Include="Res\Item_frame\ITEM_FRAME_MR.bmp" />
+    <None Include="Res\Item_frame\ITEM_FRAME_TL.bmp" />
+    <None Include="Res\Item_frame\ITEM_FRAME_TM.bmp" />
+    <None Include="Res\Item_frame\ITEM_FRAME_TR.bmp" />
+    <None Include="Res\Plaza_match\LINE.png" />
+    <None Include="Res\Server_list\LIST_TITLE_L.png" />
+    <None Include="Res\Server_list\LIST_TITLE_M.png" />
+    <None Include="Res\Server_list\LIST_TITLE_R.png" />
+    <None Include="Res\LOAD_STATUS.png" />
+    <None Include="Res\Plaza_logon\Logon_titile.png" />
+    <None Include="Res\Plaza_whisper\MESSAGE_SETTING.bmp" />
+    <None Include="Res\NULL.ico" />
+    <None Include="Res\Plaza_match\NUMBER_GREEN.png" />
+    <None Include="Res\Plaza_match\NUMBER_ORANGE.png" />
+    <None Include="Res\PASSWORD_LEVEL.png" />
+    <None Include="Res\Platform_frame\Platform_logo.png" />
+    <None Include="Res\Web_browser\PLAZA_VIEW_BACK.bmp" />
+    <None Include="Res\Plaza_logon\REGISTER_TITLE.png" />
+    <None Include="Res\REMOTE_USER_IMAGE.bmp" />
+    <None Include="Res\Plaza_whisper\REVECE_WHISPER.bmp" />
+    <None Include="Res\SEARCH_LOGO.png" />
+    <None Include="Res\Server_list\SERVER_ITEM_M.png" />
+    <None Include="Res\Server_list\SERVER_ITEM_T.png" />
+    <None Include="Res\Server_list\SERVER_LIST_ARROW.png" />
+    <None Include="Res\Server_list\SERVER_LIST_BL.bmp" />
+    <None Include="Res\Server_list\SERVER_LIST_BM.bmp" />
+    <None Include="Res\Server_list\SERVER_LIST_BR.bmp" />
+    <None Include="Res\SERVER_LIST_IMAGE.bmp" />
+    <None Include="Res\Server_list\SERVER_LIST_ML.bmp" />
+    <None Include="Res\Server_list\SERVER_LIST_MR.bmp" />
+    <None Include="Res\Server_list\SERVER_LIST_TL.bmp" />
+    <None Include="Res\Server_list\SERVER_LIST_TM.bmp" />
+    <None Include="Res\Server_list\SERVER_LIST_TR.bmp" />
+    <None Include="Res\Item_frame\SERVER_NAME_BK.png" />
+    <None Include="Res\Server_list\ServerListBack.bmp" />
+    <None Include="Res\Plaza_collocate\SERVICE_BAR_BT.png" />
+    <None Include="Res\Plaza_collocate\SERVICE_BAR_IMAGE.png" />
+    <None Include="Res\Plaza_collocate\SERVICE_BAR_LOGO.png" />
+    <None Include="Res\SERVICE_LIST_IMAGE.bmp" />
+    <None Include="Res\Plaza_whisper\SET_DETEST.bmp" />
+    <None Include="Res\Plaza_whisper\SET_FRIEND.bmp" />
+    <None Include="Res\Plaza_whisper\SHIELD_WHISPER.bmp" />
+    <None Include="Res\SKIN_BUTTON.png" />
+    <None Include="Res\SKIN_COLOR.png" />
+    <None Include="Res\SKIN_ITEM.png" />
+    <None Include="Res\Dlg_status\STATUS_IMAGE.png" />
+    <None Include="Res\Dlg_status\STATUS_LINE.png" />
+    <None Include="Res\Dlg_status\STATUS_POINT.png" />
+    <None Include="Res\Server_table\TABLE_BL.bmp" />
+    <None Include="Res\Server_table\TABLE_BM.bmp" />
+    <None Include="Res\Server_table\TABLE_BR.bmp" />
+    <None Include="Res\Server_table\TABLE_GROUND.bmp" />
+    <None Include="Res\Server_table\Table_locker.png" />
+    <None Include="Res\Server_table\TABLE_ML.bmp" />
+    <None Include="Res\Server_table\TABLE_MR.bmp" />
+    <None Include="Res\Server_table\TABLE_NUMBER_BK.png" />
+    <None Include="Res\Server_table\Table_number_nb.png" />
+    <None Include="Res\TABLE_PASSWORD.png" />
+    <None Include="Res\Server_table\Table_ready.png" />
+    <None Include="Res\Plaza_match\TABLE_TL.bmp" />
+    <None Include="Res\Server_table\TABLE_TL.bmp" />
+    <None Include="Res\Plaza_match\TABLE_TM.bmp" />
+    <None Include="Res\Server_table\TABLE_TM.bmp" />
+    <None Include="Res\Plaza_match\TABLE_TR.bmp" />
+    <None Include="Res\Server_table\TABLE_TR.bmp" />
+    <None Include="Res\User_info\Under_write_l.png" />
+    <None Include="Res\User_info\Under_write_m.png" />
+    <None Include="Res\User_info\Under_write_r.png" />
+    <None Include="Res\User_info\USER_INFO_L.bmp" />
+    <None Include="Res\User_info\USER_INFO_M.bmp" />
+    <None Include="Res\User_info\USER_INFO_R.bmp" />
+    <None Include="Res\Server_user\USER_LIST_BL.bmp" />
+    <None Include="Res\Server_user\USER_LIST_BM.bmp" />
+    <None Include="Res\Server_user\USER_LIST_BR.bmp" />
+    <None Include="Res\Server_user\USER_LIST_ML.bmp" />
+    <None Include="Res\Server_user\USER_LIST_MR.bmp" />
+    <None Include="Res\Server_user\USER_LIST_TL.bmp" />
+    <None Include="Res\Server_user\USER_LIST_TM.bmp" />
+    <None Include="Res\Server_user\USER_LIST_TR.bmp" />
+    <None Include="Res\WEB_BROWSER\PLAZA_VIEW_BACK.png" />
+    <None Include="Res\WHISPER.ico" />
+    <None Include="Res\Plaza_whisper\WHISPER_CONTRUL_B.bmp" />
+    <None Include="Res\Plaza_whisper\WHISPER_CONTRUL_M.bmp" />
+    <None Include="Res\Plaza_whisper\WHISPER_CONTRUL_T.bmp" />
+    <None Include="Res\Plaza_whisper\WHISPER_USER_INFO_B.bmp" />
+    <None Include="Res\Plaza_whisper\WHISPER_USER_INFO_M.bmp" />
+    <None Include="Res\Plaza_whisper\WHISPER_USER_INFO_T.bmp" />
+    <None Include="Res\Server_chat\BUGLE.wav" />
+    <None Include="Res\Server_chat\BUGLE_EX.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="GamePlaza.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\公共组件\服务核心\ServiceCore.vcxproj">
+      <Project>{b1320037-89dd-4f99-a628-69dc200dfa05}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\公共组件\进程控制\ProcessControl.vcxproj">
+      <Project>{d4816eb8-590e-4ebc-9d61-2a77d0070fee}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\下载组件\DownLoad.vcxproj">
+      <Project>{44cbb750-e895-4bdb-8a7a-5b8f009aabde}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\图像控件\WHImage.vcxproj">
+      <Project>{a8e64f0b-3137-4993-a512-22cc787f7627}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\平台数据\PlatformData.vcxproj">
+      <Project>{cc596332-197e-407b-95f3-cb817470ed84}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\形象组件\AvatarControl.vcxproj">
+      <Project>{6d2c97fd-5e1a-4489-90f8-ea0bc53486e0}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\游戏控件\ShareControl.vcxproj">
+      <Project>{ac6a2927-5746-4a84-9e30-dffe0722833b}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\游戏框架\GameFrame.vcxproj">
+      <Project>{ef2f0af7-dc00-454b-9ec7-cc7887aa0137}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\游戏道具\GameProperty.vcxproj">
+      <Project>{4a3e5e93-a227-426f-8e6f-f588b9ca87b5}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\用户服务\UserService.vcxproj">
+      <Project>{e8bb4ed2-44d1-4541-a6b4-c05c201fb856}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\界面控件\SkinControl.vcxproj">
+      <Project>{10ac72c9-82a7-4c08-8ff2-27730d76518d}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="Res\admin.manifest" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="GamePlaza.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
